@@ -1,0 +1,10 @@
+<ul class="flex flex-wrap" ng-class="{'justify-center': vm.projects.length == 0}">
+    <li class="m-5" ng-if="vm.projects.length > 0" ng-repeat="project in vm.projects">
+        <div class="p-5 w-56 bg-indigo-300 rounded-lg text-center">
+            {{project}}
+        </div>
+    </li>
+    <li class="m-5" ng-if="vm.projects.length == 0">
+        <label class="text-center text-4xl text-teal-400 font-bold">NO PROJECTS</label>
+    </li>
+</ul>
